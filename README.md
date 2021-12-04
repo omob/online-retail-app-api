@@ -1,5 +1,5 @@
 # Online Retail App API
-API Endpoint for the project at  <a href="https://github.com/omob/online-retail-app" target="_blank" title="Go to App repo">Online Retail Store Repository</a>
+API Endpoint for the project at  <a href="https://github.com/omob/online-retail-application" target="_blank" title="Go to App repo">Online Retail Store Repository</a>
 
 ## Installation
 Create a `.env` file at the root folder of the application and populate with the information below. See sample data in `config/default.json` ``(Ensure to replace the data here with the correct data)``. These fields are needed to run the application.

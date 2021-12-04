@@ -23,6 +23,9 @@ npm i
 npm run start
 ```
 
+### Automation
+The cron/automate.js script is called via an endpoint at `/api/transactions/automate/execute` every hour via a CRON scheduler. This script runs an algorithmn that determines the billing date for each subscription plan and notifies users via mail on when billing will occur. It also retries failed transactions if any.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

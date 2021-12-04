@@ -1,0 +1,17 @@
+{
+  "jwtPrivateKey": "bbfbb84b8b67aaaa76114401ccc53f56e99d699fa6cefba3e7ce4b20d70ce02b",
+  "dbLocal": "mongodb://localhost:27017/sanabliss-global",
+  "db": "mongodb://deevcorp:deevcorp@grocerystore-shard-00-00.gsf76.mongodb.net:27017,grocerystore-shard-00-01.gsf76.mongodb.net:27017,grocerystore-shard-00-02.gsf76.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-ck4ejx-shard-0&authSource=admin&retryWrites=true&w=majority",
+  "port": "3900",
+  "requiresAuth": true,
+  "frontEndUrl": "http://localhost:3000",
+  "tokenExpiration": 3600,
+  "email": {
+    "user": "info@sanabliss.dontfogettosayhi.com",
+    "pass": "info@sanabliss",
+    "host": "dontfogettosayhi.com"
+  },
+  "adminEmail": "aboayosam@gmail.com",
+  "PAYSTACK_PUBLIC_KEY": "pk_test_4077252ade018e67b7a08c85e3aa4a9d33563cb4",
+  "PAYSTACK_SECRET_KEY": "sk_test_9955913f0056b1f16ab373aa35a8a5c62112b9b0"
+}

@@ -10,11 +10,11 @@ module.exports = class Email {
   constructor() {
     this.transporter = nodemailer.createTransport({
       port: 587,
-      host: config.email.host,
+      host: process.env.email_host || config.email.host,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: config.email.user,
-        pass: config.email.pass,
+        user: process.env.email_user || config.email.user,
+        pass: process.env.email_pass || config.email.pass,
       },
       tls: {
         rejectUnauthorized: false,
@@ -146,7 +146,7 @@ module.exports = class Email {
       await this.sendMail(
         "New Subscription Order",
         message,
-        config.get("adminEmail")
+        process.env.admin_email || config.get("adminEmail")
       );
       winston.info(
         `SEND EMAIL TO ADMIN ON NEW SUBSCRIPTION ORDER ${name.firstName} ${name.lastName}`
@@ -243,7 +243,7 @@ module.exports = class Email {
       await this.sendMail(
         "New One-off Payment",
         adminMessage,
-        config.get("adminEmail")
+        process.env.admin_email || config.get("adminEmail")
       ); // to admin
 
       winston.info(
